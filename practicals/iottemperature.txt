@@ -1,0 +1,10 @@
+
+
+void setup() {
+  Serial.begin(9600);
+}
+void loop() {
+  float temperatureC = analogRead(A0) * 0.488; // Read sensor and convert to Celsius
+  Serial.println(temperatureC);
+  delay(1000);
+}
